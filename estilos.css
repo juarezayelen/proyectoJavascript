@@ -1,0 +1,444 @@
+@charset "UTF-8";
+/*Imports de estilos */
+.header {
+  background-color: #34495E;
+  background: -webkit-gradient(linear, left top, left bottom, from(#34495E), to(#85929E));
+  background: linear-gradient(to bottom, #34495E, #85929E);
+}
+
+.header h1 {
+  font-family: 'Nunito';
+  /* Fuente elegida de google font */
+  color: #1fa8c0;
+  /* Cambia el título principal (h1) a color celeste */
+  font-size: 30px;
+  /* Cambia el tamaño de la fuente */
+  font-weight: bold;
+  /* Cambiar el grosor de la fuente, en este caso, se muestra la letra en negrita */
+  letter-spacing: 2px;
+  /* Modifica el espaciado entre letras */
+  text-transform: uppercase;
+  /* Cambia el título a letras mayúsculas */
+  text-decoration: underline;
+  /* Subraya el título */
+  text-shadow: 3px 3px 3px #0c6094;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  /*Se agrega animación al título principal */
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  text-align: center;
+}
+
+@-webkit-keyframes aparecer {
+  /*Animación del título principal*/
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  /*Animación del título principal*/
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer .logo {
+  display: flexbox;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer {
+  background-color: #34495E;
+  background: -webkit-gradient(linear, left top, left bottom, from(#85929E), to(#34495E));
+  background: linear-gradient(to bottom, #85929E, #34495E);
+}
+
+footer h6 {
+  color: #0e6d7e;
+}
+
+.dato {
+  color: #138ba0;
+  font-weight: bold;
+  /* Cambia la letra de la fuente a negrita */
+  text-align: center;
+  /* Cambia la alineación del texto de los datos de contacto */
+}
+
+#mapa {
+  display: block;
+  /*margin: auto;*/
+}
+
+.ciudad {
+  text-align: center;
+  color: #0c6675;
+  font-weight: bold;
+}
+
+.direccion {
+  text-align: center;
+  color: #0c6675;
+  font-weight: bold;
+}
+
+.telefono {
+  text-align: center;
+  color: #0c6675;
+  font-weight: bold;
+ 
+}
+
+/* ----Estilos generales de la página----- */
+* {
+  padding: 2px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  
+  
+  
+}
+
+main {
+  font-family: 'Nunito';
+  /* Fuente elegida de google font */
+  line-height: 14px;
+  /* Cambia la separación entre líneas */
+  font-size: 15px;
+  /* Se especifica el tamaño de la fuente */
+  background-color: #85929E;
+}
+
+/*---------------------- Estilos para mi menú navegable - Inicio ----------------------*/
+nav .navbar-nav {
+  font-weight: bold;
+  color: #0c6675;
+}
+
+nav .navbar-text {
+  font-weight: bold;
+  color: #0c6675;
+}
+
+a:link {
+  color: #0c6675;
+  /* Color para enlaces no visitados */
+  font-weight: bold;
+}
+
+a:visited {
+  color: purple;
+}
+
+/* Color para enlaces visitados */
+a:hover {
+  background: #5cb5c5;
+}
+
+/* Color para cuando el usuario esta sobre el enlace */
+/*---------------------- Estilos para mi menú navegable - Fin ----------------------*/
+.imgnormalizada img {
+  width: 100%;
+  height: 500px;
+  max-height: 500px;
+  background-size: cover;
+}
+
+/*-----------------Estilos para el carrusel------------------------*/
+.FormatoCarrusel1 {
+  color: #0c6675;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: capitalize;
+  position: center;
+  border-color: grey;
+}
+
+.FormatoLetraCarrusel {
+  color: #0c6675;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.carousel-caption a {
+  color: #0c6675;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*-----------------Estilos para el carrusel------------------------*/
+.contenedor-1__subtitulos {
+  color: #0c6675;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.contenedor-1--p, #parrafo {
+  color: #0c6675;
+  font-style: italic;
+}
+
+.contenedor-2 {
+  height: 300px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-size: cover;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.contenedor-2 p {
+  color: #0c6675;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.contenedor-2__foto {
+  height: 250px;
+  width: 300px;
+  vertical-align: middle;
+}
+
+.contenedor-2__foto:hover {
+  -webkit-animation: 1.5s movercaja infinite;
+          animation: 1.5s movercaja infinite;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.card-body {
+  padding: 0;
+  background-color: #ABB2B9;
+  color: #0c6675;
+  /* Modifica color de las letras */
+  font-weight: bold;
+  /* Cambia la letra de la fuente a negrita */
+  text-align: center;
+}
+
+ul li {
+  /*Estilo de listas incluidas en la card */
+  list-style-position: inside;
+  text-align: justify;
+}
+
+.contenedor-3 {
+  color: #0c6675;
+  /* Modifica color de las letras del formulario */
+  font-weight: bold;
+  /* Cambia la letra de la fuente a negrita */
+}
+
+#myModal modal-header {
+  color: #0c6675;
+}
+
+#volverAlInicio {
+  text-align: center;
+  /* Cambia la alineación del link para volver al inicio */
+  display: block;
+}
+
+input {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+input:focus {
+  font-size: 18px;
+  border: 2px solid #0c6675;
+  color: #0c6675;
+}
+
+/*Inicio de medias queries */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .imgnormalizada img {
+    background-size: cover;
+  }
+  header nav {
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+  }
+  
+  .contenedor-2 {
+    height: 300px;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    /*align-items: center;*/
+    background-size: cover;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .contenedor-2__foto {
+    height: 150px;
+    /*ajusto la altura de la foto para dispositivos móviles*/
+    width: 200px;
+    /*ajusto el ancho de la foto para dispositivos móviles*/
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .contenedor-2__foto:hover {
+    -webkit-animation: 1.5s movercaja infinite;
+            animation: 1.5s movercaja infinite;
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+  }
+  /*Agrando las fuentes del carrusel */
+  .FormatoCarrusel1 {
+    color: #0c6675;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: center;
+    border-color: grey;
+  }
+  .FormatoLetraCarrusel {
+    color: #0c6675;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .carousel-caption a {
+    color: #0c6675;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  #comentariosForm {
+    width: 80%;
+    height: 200px;
+  }
+  #mapa {
+    width: 80%;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 575px) {
+  .card {
+    float: center;
+    width: 80%;
+  }
+  #comentariosForm {
+    width: 80%;
+    height: 200px;
+  }
+  #mapa {
+    width: 80%;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 780px) {
+  /* Modificaciones para cuando el ancho de la pantalla está entre 576px y 780px */
+  .card {
+    /*No logro hacer que las cards queden mejor ajustadas*/
+    width: 20%;
+    height: 10%;
+  }
+  #comentariosForm {
+    width: 80%;
+    height: 200px;
+  }
+  #mapa {
+    width: 80%;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 781px) and (max-width: 1024px) {
+  /* Modificaciones para cuando el ancho de la pantalla está entre 481px y 1024px */
+  #comentariosForm {
+    width: 80%;
+    height: 200px;
+  }
+  #mapa {
+    width: 80%;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  /*Agrando los tamaños de las fuentes en los párrafos para dispositivos con más de 1025 px */
+  .contenedor-1--p {
+    color: #0c6675;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .contenedor-2 p {
+    color: #547075;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .card {
+    width: 25%;
+  }
+  label {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  #comentariosForm {
+    width: 80%;
+    height: 200px;
+  }
+  #mapa {
+    width: 80%;
+    height: 300px;
+  }
+}
+
+/* Fin de medias queries */
+/*# sourceMappingURL=estilos.css.map */

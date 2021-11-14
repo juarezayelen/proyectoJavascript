@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudio Jurídico</title>
+  <meta name="description" content="Este es el sitio web de un estudio
+      jurídico ubicado en la ciudad de La Plata y que cuenta con más de 10 años
+      de experiencia">
+  <meta name="keywords" content="Estudio Jurídico, Equipo, Abogados">
+  <!--Link para importar fuente de Google Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap" rel="stylesheet">
+  <!--Link para importar archivo de estilo .css-->
+  <link rel="stylesheet" href="estilos.css">
+
+  <!--Links para incorporar Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Fav icon (Icono en pesaña del navegador) -->
+  <link rel="shortcut icon" href="images/balanzaJusticia.png" type="image/x-icon">
+  <style>
+    .navbar-text {
+      font-weight: bold;
+      color: rgb(12, 102, 117) !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+      color: rgb(12, 102, 117);
+    }
+
+    .fondoEquipo {
+      background-image: url(images/fondoGeneral.jpg);
+      background-size: cover;
+      filter: brightness(100%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Estudio Jurídico H&H</h1>
+    <!--Título principal de la página-->
+  </header>
+  <main>
+    <!-- Agrego menú pegajoso con logo -->
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top" style="background-color:#85929E;">
+      <div>
+        <a class="navbar-brand" href="#"><img src="images/balanzaJusticia.png" width="40" height="40" alt=""></a>
+      </div>
+      <!-- Toggler/collapsible Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html" target="_self">Inicio</a>
+          <a class="nav-link" href="QuienesSomos.html" target="_self">¿Quiénes
+            somos?</a>
+          <a class="nav-link" href="Servicios.html" target="_self">Servicios</a>
+          <a class="nav-link" href="Equipo.html" target="_self">Equipo</a>
+          <a class="nav-link" href="Contacto.html" target="_self">Contacto</a>
+          <a class="nav-link" href="SimuladorCuota.html" target="_self">Simulador de Cuota</a>
+        </div>
+      </div>
+      <span class="navbar-text">
+        <!--Texto de contacto-->
+        Teléfono de contacto: 2211234567
+      </span>
+    </nav>
+    <div class="fondoEquipo">
+      <section class="contenedor-1"></section>
+      <h2 class="contenedor-1__subtitulos">Equipo</h2>
+      <!--Aplico BEM-->
+      <br>
+      <div class="contenedor-2">
+        <!--Primer item-->
+        <img class="contenedor-2__foto" src="images/lawyer1.jpg" alt="Foto de abogado 1">
+        <br>
+        <p>Breve biografía del abogado</p>
+      </div>
+      <br>
+      <div class="contenedor-2">
+        <!--Segundo item-->
+        <img class="contenedor-2__foto" src="images/lawyer2.jpg" alt="Foto de abogado 2">
+        <br>
+        <p>Breve biografía del abogado</p>
+      </div>
+      </section>
+      <br>
+    </div>
+  </main>
+  <footer>
+    <br>
+    <a href="index.html" id="volverAlInicio">Volver al Inicio</a>
+    <br>
+    <div class="ciudad">Ciudad de La Plata, Provincia de Bs. As</div>
+    <div class="direccion">Dirección: Soho, El Salvador 5218, CP 1414, Buenos Aires</div>
+    <div class="telefono">Telefono: 2211234567</div>
+    <br>
+    <!--Se agrega un mapa para indicar la dirección-->
+    <iframe id="mapa"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.715524370883!2d-58.434461282556114!3d-34.586064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc945173b3dd7%3A0xe8a347bb55df550c!2sCoder%20House!5e0!3m2!1ses-419!2sar!4v1624508901218!5m2!1ses-419!2sar"
+      allowfullscreen="true" loading="lazy">
+    </iframe>
+    <br>
+    <h6>Made by Aye</h6>
+    <p class="dato">Formas de Contacto</p>
+    <!--Se agregan los iconos de las redes sociales disponibles para contactarse-->
+    <div class="logo">
+      <a target="_blank" href="https://www.facebook.com/"><img src="images/logoFacebook.jpg" alt="Logo de facebook"></a>
+      <a target="_blank" href="https://outlook.live.com/owa/"><img src="images/logoEmail.jpg" alt="Logo de email"></a>
+      <a target="_blank" href="https://ar.linkedin.com/"><img src="images/logoLinkedin.png" alt="Logo de linkedin"></a>
+    </div>
+  </footer>
+  <script src="/js/jquery-3.6.0.min.js"></script>
+  <script src="js/algoritmo.js"></script>
+</body>
+
+</html>
