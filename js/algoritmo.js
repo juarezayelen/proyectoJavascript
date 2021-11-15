@@ -113,7 +113,7 @@ boton.on("click", function (e) {
             left: '500px',
             opacity: '0.5',
             height: '150px',
-            width: '800px'
+            width: '100%'
         }, //1er parámetro propiedades
         "fast", //2do parámetro duración 
         function () { //3er parámetro callback

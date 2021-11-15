@@ -362,6 +362,8 @@ input:focus {
     width: 80%;
     height: 300px;
   }
+
+ 
 }
 
 @media only screen and (min-width: 481px) and (max-width: 575px) {
